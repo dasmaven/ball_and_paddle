@@ -1,8 +1,8 @@
+# A simple game of keeping the ball from falling for as long as you can
+# Ball speed increases gradually
 
 import turtle
 import time
-
-
 
 
 # Step 1 : Create the window in which the game will be played
@@ -67,7 +67,6 @@ def paddle_right():
 		paddle.setx(x)
 	else:
 		paddle.setx(380)
-
 
 
 # Step 10 : variables
@@ -181,14 +180,9 @@ while True:
 	
 		
 
-
-	
-		
-		
-	
-
 	# Condition to increase the speed of the ball
 	
+
 
 
 
