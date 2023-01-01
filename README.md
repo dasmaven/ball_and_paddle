@@ -1,4 +1,4 @@
-## studies in python learning
+// studies in python learning
 
 ## goal of the game
 
@@ -9,3 +9,8 @@ Ball speed increases periodically to make the task harder.
 
 Use the 'left' and 'right' arrow key to move the paddle left and right.
 Use the 'spacebar' to restart the game.
+
+## screenshots
+![play screen](https://raw.githubusercontent.com/dasmaven/ball_and_paddle/main/images/ball_and_paddle_01.png)
+
+![game end](https://raw.githubusercontent.com/dasmaven/ball_and_paddle/main/images/ball_and_paddle_02.png)
