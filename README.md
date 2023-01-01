@@ -1,4 +1,5 @@
 // studies in python learning
+// wip, need to update timer reset code
 
 ## goal of the game
 
