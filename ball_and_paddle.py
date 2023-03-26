@@ -51,7 +51,7 @@ pen.hideturtle()
 pen.goto(0,-293)
 pen.write("use left arrow <-- key to move left | use right arrow --> key to move right",align = "center", font = ("Courier", 11, "normal"))
 
-# Step 8 : Function to moove the paddle with left and right arrow key
+# Step 8 : Function to move the paddle with left and right arrow key
 def paddle_left():
 	x = paddle.xcor()
 	x += -20
@@ -78,19 +78,20 @@ play_timer = True
 # Step 10 : Create timer
 time_elapsed = turtle.Turtle()
 time_elapsed.hideturtle()
-start = time.time()
+start_time = time.time()
 game_end = turtle.Turtle()
 game_end.hideturtle()
 
 def stop_game():
 	global play_timer
+
 	play_timer = False
 	
 def restart_game():
 	ball.goto(0,0)
 	ball.color("gold")
-	ball.dx = 0.2
-	ball.dy = 0.2
+	ball.dx = 0.5
+	ball.dy = 0.5
 	ball_speed = 1
 	paddle.goto(0,-240)
 	collision_counter = 1
@@ -164,7 +165,7 @@ while True:
 
 		# Assign value of the time elasped to the variable before displaying the time_elapsed as sometimes it could lead to increase in decimal point by the time
 		# it took execute the write command.
-		time_played = round((float(time.time() - start)),1) 
+		time_played = round((float(time.time() - start_time)),1) 
 		time_elapsed.write("time elpased :  {} ".format(time_played), align = "center", font = ("Courier", 13, "normal"))
 			
 
@@ -176,7 +177,9 @@ while True:
 		game_end.write("Game Over : You Played for {} seconds".format(time_played), align = "center", font = ("Courier", 13, "bold"))
 		game_end.goto(0,0)
 		game_end.write("press spacebar to play again", align = "center", font = ("Courier", 13, "normal"))
+		#start_time = time.time - time_played
 		play_timer = True
+
 	
 		
 
