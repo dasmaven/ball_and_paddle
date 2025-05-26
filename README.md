@@ -4,7 +4,7 @@
 ## goal of the game
 
 Use the paddle to bounce the ball and keep it in play for as long as possible.
-Ball speed increases periodically to make the task harder.
+Ball speed increases periodically to make the game harder.
 
 ## controls
 
